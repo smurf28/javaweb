@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function () {
+            var time = 4;
+            var secondEle = document.getElementById("second");
+            setInterval(function () {
+                secondEle.innerHTML = time;
+                time --;
+                if(time==0){
+                    clearInterval(time);
+                    location.href="http://www.baidu.com";
+                }
+
+            },1000)
+        }
+    </script>
+</head>
+<body>
+    注册成功，<span style="color: red;" id = "second">5</span> 如不跳转<a href="http://www.baidu.com">点击</a>
+</body>
+</html>
